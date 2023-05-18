@@ -18,6 +18,38 @@ namespace DotnetCoreJQuery.Controllers
             return View();
         }
 
+        [HttpPost]
+        public int Add(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        [HttpPost]
+        public int Sub(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        [HttpPost]
+        public int Mul(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        [HttpPost]
+        public CalculateModel CalculateNumber(int num1, int num2)
+        {
+            CalculateModel calculateModel = new CalculateModel();
+
+            calculateModel.Add = num1 + num2;    
+            calculateModel.Substract = num1 - num2;    
+            calculateModel.Multiple = num1 * num2;    
+            calculateModel.Division = (double)((decimal) num1 / num2);    
+            return calculateModel;
+        }
+
+
+
         public IActionResult Privacy()
         {
             return View();
