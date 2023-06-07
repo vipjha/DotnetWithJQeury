@@ -23,10 +23,14 @@
           "Microsoft.Extensions.DependencyModel": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {}
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {}
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -62,10 +66,14 @@
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {}
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {}
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll": {
@@ -115,10 +123,14 @@
           "Microsoft.CodeAnalysis.Common": "[4.0.0]"
         },
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {}
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {}
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
@@ -186,10 +198,14 @@
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {
@@ -213,10 +229,14 @@
       "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -231,19 +251,27 @@
       "System.Reflection.Metadata/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -274,10 +302,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -296,10 +328,14 @@
           "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {}
+          "lib/net6.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {}
+          "lib/net6.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -926,6 +962,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -955,7 +993,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -967,7 +1006,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

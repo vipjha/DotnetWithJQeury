@@ -48,8 +48,6 @@ namespace DotnetCoreJQuery.Controllers
             return calculateModel;
         }
 
-
-
         public IActionResult Privacy()
         {
             return View();
